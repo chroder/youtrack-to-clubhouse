@@ -1,0 +1,44 @@
+<?php
+
+$CONFIG= [];
+
+/**
+ * Where to save YT data and import progress data.
+ */
+$CONFIG['data_dir'] = __DIR__.'/../data';
+
+/**
+ * The URL to your YT instance
+ */
+$CONFIG['youtrack_url'] = 'https://MYNAME.myjetbrains.com/youtrack';
+
+/**
+ * Your API token. Get this from:
+ * YT -> Cog menu -> Users -> Click an admin -> Authenticaton tab
+ * Then click "new token" and create a token with the Youtrack scope.
+ */
+$CONFIG['youtrack_api_token'] = 'XXX';
+/**
+ * The project ID to work with. This is the prefix you find before
+ * your issue IDs. E.g. if you have an issue PROJ-2833 then enter PROJ here.
+ */
+$CONFIG['youtrack_project'] = 'PROJ';
+
+/**
+ * Your clubhouse URL.
+ */
+$CONFIG['clubhouse_url']       = 'https://app.clubhouse.io/MYNAME/';
+
+/**
+ * Your clubhouse API token. Get it from:
+ * Clubhouse -> Cog menu -> Settings -> API Tokens.
+ */
+$CONFIG['clubhouse_api_token'] = 'XXX';
+
+/**
+ * The Clubhouse project to import into.
+ * The ID is the project ID that you can see from the Projects page.
+ */
+$CONFIG['clubhouse_project']   = 6;
+
+return $CONFIG;
